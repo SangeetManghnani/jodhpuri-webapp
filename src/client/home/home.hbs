@@ -1,2 +1,10 @@
-Test
-Home page
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down" id="nav-mobile">
+        {{#each navList}}
+        <li><a href="javascript:void(0);" id={{this.name}}-nav-link>{{this.name}}</a></li>
+        {{/each}}
+        </ul>
+    </div>
+  </nav>
