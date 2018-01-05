@@ -22,3 +22,4 @@
   - SASS
   - Bootstrap
   - Webpack
+  - Material-UI
