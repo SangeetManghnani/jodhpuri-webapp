@@ -1,12 +1,6 @@
 require('./_main.scss');
 import $ from "jquery";
-let vm = new Vue({
-    el: '#app',
-    data() {
-        return {}
-    },
-    methods: {}
-})
+
 
 console.log("qwel");
 
