@@ -1,0 +1,15 @@
+#head-notification {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    font-size: 15px;
+    line-height: 1.25;
+    padding: 10px 0;
+    background-color: $theme-primary;
+    a {
+        color: $theme-secondary;
+    }
+    // background-color: rgb(255, 209, 102);
+}

@@ -1,0 +1,15 @@
+<div class="uk-flex uk-flex-column uk-padding-large uk-flex-center ">
+    <div class="intro-categories">
+        <p class="uk-text-center uk-text-large uk-text-bold text-primary uk-text-capitalize with-stroke">
+            Explore Our Amazing Furniture Range
+        </p>
+    </div>
+    <div  uk-grid>
+        {{#each categories}}
+        <div class="uk-width-1-6@m">
+            <div class="uk-card uk-card-default uk-card-body uk-padding">{{this.name}}</div>
+        </div>
+        {{/each}}
+        {{!-- <div><div class="uk-background-primary uk-padding uk-light">Item</div></div> --}}
+    </div>
+</div>

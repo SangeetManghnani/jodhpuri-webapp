@@ -1,10 +1,18 @@
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down" id="nav-mobile">
-        {{#each navList}}
-        <li><a href="javascript:void(0);" id={{this.name}}-nav-link>{{this.name}}</a></li>
-        {{/each}}
-        </ul>
-    </div>
-  </nav>
+{{!-- HOME COMPONENT --}}
+{{#is_desktop}}
+ <div class="main-content uk-container-expand">
+      {{> home/slideshow}}
+      {{> home/categories}}
+      {{> home/bestSellers}}
+ </div>
+{{/is_desktop}}
+
+{{#is_mobile}}
+  <div class="main-content uk-container-expand">
+      {{> home/slideshow}}
+      {{> home/categories}}
+      {{> home/bestSellers}}
+ </div>
+{{/is_mobile}}
+{{> home/newArrivals}}
+

@@ -6,7 +6,6 @@ console.log("qwel");
 
 export class main {
     constructor() {
-        console.log('hello')
         $('#Home-nav-link').click((e) => {
             e.preventDefault();
             alert('Jquery works!')
@@ -15,5 +14,3 @@ export class main {
 }
 
 const mainVar = new main;
-
-// export main;

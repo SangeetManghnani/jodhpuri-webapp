@@ -1,0 +1,10 @@
+.main-content {
+    #slider-left,
+    #slider-right {
+        color: rgba(51, 51, 51, 0.73) !important;
+        &:focus,
+        &:hover {
+            color: rgba(51, 51, 51, 1) !important;
+        }
+    }
+}
