@@ -1,0 +1,20 @@
+.text-primary {
+    color: $text-primary;
+}
+
+.with-stroke {
+    position: relative;
+    margin-bottom: 30px;
+    &:after {
+        display: block;
+        position: relative;
+        content: "";
+        width: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        border-bottom: 1px solid #ED7745;
+        padding-top: 0.5rem;
+    }
+}

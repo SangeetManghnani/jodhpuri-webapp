@@ -1,0 +1,18 @@
+{{!-- HOME COMPONENT --}}
+{{#is_desktop}}
+ <div class="main-content uk-container-expand">
+      {{> home/slideshow}}
+      {{> home/categories}}
+      {{> home/bestSellers}}
+ </div>
+{{/is_desktop}}
+
+{{#is_mobile}}
+  <div class="main-content uk-container-expand">
+      {{> home/slideshow}}
+      {{> home/categories}}
+      {{> home/bestSellers}}
+ </div>
+{{/is_mobile}}
+{{> home/newArrivals}}
+

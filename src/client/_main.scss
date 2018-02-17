@@ -1,0 +1,43 @@
+body {
+    color: red;
+    font-family: 'Lato' !important;
+}
+
+a,
+p {
+    font-family: 'Lato' !important;
+}
+
+p,
+div {
+    font-size: 13px;
+}
+
+// load fonts
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// ==================== FONT LOAD END =======================
+@import './_theme.scss';
+@import './_global.scss';
+@import './_common/navbar/navbar_mobile.scss';
+@import './_common/notification/notifications.scss';
+@import './home/home.scss';
