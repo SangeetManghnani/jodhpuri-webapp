@@ -22,4 +22,7 @@
   - SASS
   - Bootstrap
   - Webpack
-  - Material-UI
+
+## Setup
+- Clone & npm install.
+- npm run start.
