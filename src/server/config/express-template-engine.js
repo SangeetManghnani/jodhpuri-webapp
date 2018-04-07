@@ -14,7 +14,7 @@ export default function(app) {
     // Load all handlebars helpers from client dir
     glob.sync(CLIENT_DIR + '/**/*-helper.js').forEach(function(name) {
         // let helper = require(name);
-        let helper = require('/Users/sangeetmanghnani/development_personal/experiments/jodhpuri-webapp/src/client/home/ifMobile-helper.js');
+        let helper = require(CLIENT_DIR + '/home/ifMobile-helper.js');
         console.log(helper);
         helpers[helper.name] = helper.func;
     });
