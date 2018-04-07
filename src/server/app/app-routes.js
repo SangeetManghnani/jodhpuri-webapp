@@ -1,6 +1,7 @@
 // This file is executed in NodeJs
 
 import homeController from './home/home-controller';
+import aboutUsController from './aboutUs/about-us-controller';
 // import searchController from './search/search-controller';
 // import propertyController from './property/property-controller';
 
@@ -8,10 +9,11 @@ import homeController from './home/home-controller';
 // we need to export them in CommonJS style
 module.exports = function(app, router) {
 
-  router.get("/", homeController.main);
+    router.get("/", homeController.main);
+    router.get("/about-us", aboutUsController.main);
 
-  // router.get("/s/*", searchController.main);
+    // router.get("/s/*", searchController.main);
 
-  // router.get("/item/*", propertyController.main);
+    // router.get("/item/*", propertyController.main);
 
 };

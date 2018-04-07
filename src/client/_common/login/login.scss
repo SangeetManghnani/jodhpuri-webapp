@@ -1,0 +1,25 @@
+#login-modal {
+    .uk-modal-dialog {
+        width: 960px;
+    }
+    .uk-modal-body {
+        padding: 0;
+        .uk-width-1-2 {
+            padding-left: 0;
+        }
+        button {
+            background: #008489;
+            color: #fff;
+        }
+        #loginFormWrapper {
+            padding-top: 1rem;
+        }
+    }
+    .login-image-container {
+        height: 480px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
