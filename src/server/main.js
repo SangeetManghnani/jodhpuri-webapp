@@ -54,9 +54,12 @@ router(app);
 const server = require('http').createServer(app);
 
 // Start server
-server.listen(4000, function() {
-    console.log('Express server listening on %d', 4000);
+server.listen(process.env.PORT || 5000, function() {
+    console.log('Express server listening');
 });
+// server.listen(4000, function() {
+//     console.log('Express server listening on %d', 4000);
+// });
 
 
 // Export app
