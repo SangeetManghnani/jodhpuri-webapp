@@ -17,12 +17,16 @@ export default function(app) {
         let helper = require(CLIENT_DIR + '/home/ifMobile-helper.js');
         console.log(helper);
         helpers[helper.name] = helper.func;
+
+        let loopHelper = require(CLIENT_DIR + '/helpers/staticLoop.js');
+        helpers[helper.name] = helper.func;
     });
     console.log(helpers);
 
     var partialsDir = [
         CLIENT_DIR, { dir: '/home', namespace: 'home' },
         { dir: '/_common/navbar', namespace: 'navbar' },
+        { dir: '/partials', namespace: 'partials' }
     ]
 
     console.log(partialsDir);

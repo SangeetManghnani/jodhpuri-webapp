@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "Full-stack ES6 application starter | Server: NodeJs / Express / REST api / Sequelize | Client: Handlebars / SASS / WebPack",
     "scripts": {
+        "start:local": "concurrently \"npm run build:watch\" \"npm run server:watch\"",
         "start": "concurrently \"npm run build:watch\" \"npm run server\"",
         "build": "webpack --config build/webpack.config.js --colors",
         "build:watch": "webpack --config build/webpack.config.js --watch --colors",

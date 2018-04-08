@@ -2,8 +2,8 @@
 
 import homeController from './home/home-controller';
 import aboutUsController from './aboutUs/about-us-controller';
-// import searchController from './search/search-controller';
-// import propertyController from './property/property-controller';
+import productController from './product/ProductController';
+import categoryController from './category/CategoryController';
 
 // because * -routes files are required dynamically,
 // we need to export them in CommonJS style
@@ -11,6 +11,8 @@ module.exports = function(app, router) {
 
     router.get("/", homeController.main);
     router.get("/about-us", aboutUsController.main);
+    router.get("/:category", categoryController.main);
+    router.get("/:category/:product", productController.main);
 
     // router.get("/s/*", searchController.main);
 
