@@ -1,5 +1,27 @@
 .listing-wrapper {
     .uk-card-body {
-        padding: 2rem;
+        padding: 0rem;
+        section {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            .uk-label {
+                height: 1.5rem;
+            }
+            .details {
+                margin-left: 1rem;
+            }
+        }
+        .card-bottom {
+            justify-content: space-between;
+            p {
+                margin: 0;
+            }
+            #price-container {
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+            }
+        }
     }
 }

@@ -1,0 +1,14 @@
+.jodhpuri-nav-wrapper {
+    .uk-navbar-nav {
+        a.uk-open {
+            color: #ed7645;
+        }
+    }
+    .uk-navbar-dropdown.uk-open {
+        display: flex;
+        width: auto;
+        ul {
+            padding: 1rem;
+        }
+    }
+}
