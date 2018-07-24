@@ -1,3 +1,14 @@
 .product-wrapper {
     padding-top: 1rem;
+    .product-details-section {
+        // display: flex;
+        #product-slider {
+            width: 65%;
+        }
+        .buy-section {
+            button {
+                color: #fff;
+            }
+        }
+    }
 }

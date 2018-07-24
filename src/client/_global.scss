@@ -40,6 +40,10 @@
     background: #ed7645;
 }
 
+.jodhpuri-primary-bg-light {
+    background: #ff9800;
+}
+
 .nomargin {
     margin: 0;
 }
@@ -54,4 +58,10 @@
 
 .jodhpuri-secondary-heading {
     font-weight: 500;
+}
+
+p,
+*+p {
+    margin-bottom: 0 !important;
+    margin-top: 0.5rem !important;
 }
